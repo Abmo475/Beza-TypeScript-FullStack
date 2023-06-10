@@ -11,12 +11,13 @@ class DataService {
     return http.post<FormData>("/v1/upload", file);
   }
   get(id: string) {
-    return http.get<RecordData>(`/tutorials/${id}`);
+    return http.get<RecordData>(`/item/${id}`);
   }
 
 
   update(data: RecordData) {
-    return http.put<any>(`api/v1/update/${data.id}`, data);
+    console.log(data)
+    return http.put<any>(`api/v1/update`, data);
   }
 
   delete(id: any) {
@@ -24,11 +25,7 @@ class DataService {
   }
 
   deleteAll() {
-    return http.delete<any>(`/tutorials`);
-  }
-
-  findByTitle(title: string) {
-    return http.get<Array<RecordData>>(`/tutorials?title=${title}`);
+    return http.delete<any>(`/deleteall`);
   }
 }
 let Data=new DataService();

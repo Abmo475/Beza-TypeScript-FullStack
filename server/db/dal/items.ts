@@ -17,10 +17,9 @@ export const findOrCreate = async (payload: ItemsInput): Promise<ItemsOuput> => 
     })
     return item
 }
-export const update = async (item_no: String, payload: Partial<ItemsInput>): Promise<ItemsOuput> => {
+export const update = async (payload: Partial<ItemsInput>): Promise<ItemsOuput> => {
     const item = await Item.findOne({where: {
-        item_no: payload.item_no,
-        description: payload.description
+      id:payload.id
       }})
     if (!item) {
         // @todo throw custom error

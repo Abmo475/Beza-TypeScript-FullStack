@@ -19,8 +19,8 @@ export const toItem= (item: ItemsOuput): Item => {
 export const create = async(payload: CreateItemDTO): Promise<Item> => {
     return toItem(await service.create(payload))
 }
-export const update = async (item_no: String, payload: UpdateItemsDTO): Promise<Item> => {
-    return toItem(await service.update(item_no, payload))
+export const update = async (payload: UpdateItemsDTO): Promise<Item> => {
+    return toItem(await service.update(payload))
 }
 export const getById = async (id: number): Promise<Item> => {
     return toItem(await service.getById(id))

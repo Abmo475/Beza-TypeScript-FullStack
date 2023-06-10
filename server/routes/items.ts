@@ -12,10 +12,10 @@ itemsRouter.get(':/id', async (req: Request, res: Response) => {
     const result = await itemController.getById(id)
     return res.status(200).send(result)
 })
-itemsRouter.put('/:id', async (req: Request, res: Response) => { // update 
-    const id =  req.params.id
+itemsRouter.put('/update', async (req: Request, res: Response) => { // update 
     const payload:UpdateItemsDTO = req.body
-    const result = await itemController.update(id, payload)
+    console.log(payload)
+    const result = await itemController.update(payload)
     return res.status(201).send(result)
 })
 itemsRouter.delete('/delete/:id', async (req: Request, res: Response) => { // delete using id 
@@ -64,7 +64,7 @@ itemsRouter.post('/upload',upload.single('file'), async(req: Request, res: Respo
         if(found===0)
              await itemController.create(record) // for create
         else
-             await itemController.update(String(found),record) // for delete
+             await itemController.update(record) // for delete
        } 
         })
    return res.status(200).send({ 

@@ -6,8 +6,8 @@ import {ItemsInput, ItemsOuput} from '../models/item'
 export const create = async (payload: ItemsInput): Promise<ItemsOuput> => {
     return ItemDal.create(payload)
 }
-export const update = async (id: String, payload: Partial<ItemsInput>): Promise<ItemsOuput> => {
-    return ItemDal.update(id, payload)
+export const update = async (payload: Partial<ItemsInput>): Promise<ItemsOuput> => {
+    return ItemDal.update(payload)
 }
 
 export const getById = (id: number): Promise<ItemsOuput> => {
