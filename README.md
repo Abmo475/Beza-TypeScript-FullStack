@@ -62,11 +62,11 @@ PORT=xxxx
 # Main ui with record 
 !(screenshots/thewhole.png)
 # MySQL database record 
-!(screenshots/db.png)
+![file-upload-typescript](screenshots/db.png)
 # On edit
-!(screenshots/onedit.png)
+![file-upload-typescript](screenshots/onedit.png)
 # on delete
-!(screenshots/canceledit.png)
+![file-upload-typescript](screenshots/canceledit.png)
  
 
  
