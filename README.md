@@ -1,6 +1,6 @@
 # Excel import using full stack typescript
 
-set up database for backend 
+set up database for backend in .env 
 ```
 NODE_ENV=development
 DB_NAME=excel
