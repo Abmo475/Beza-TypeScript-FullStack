@@ -1,5 +1,13 @@
 # Excel import using full stack typescript
+To compile your typescript use below command 
 
+```
+npx tsc
+```
+Then specify main javascript file 
+```
+  "main": "dist/server/index.js",
+  ```
 In the project directory run 
 
 ```
