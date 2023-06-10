@@ -60,7 +60,7 @@ PORT=xxxx
 ```
 
 # Main ui with record 
-!(screenshots/thewhole.png)
+![file-upload-typescript](screenshots/thewhole.png)
 # MySQL database record 
 ![file-upload-typescript](screenshots/db.png)
 # On edit
