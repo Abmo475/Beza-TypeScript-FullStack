@@ -60,13 +60,13 @@ PORT=xxxx
 ```
 
 # Main ui with record 
-![react-multiple-file-upload-typescript](screenshots/thewhole.png)
+!(screenshots/thewhole.png)
 # MySQL database record 
-![react-multiple-file-upload-typescript](screenshots/db.png)
+!(screenshots/db.png)
 # On edit
-![react-multiple-file-upload-typescript](screenshots/onedit.png)
+!(screenshots/onedit.png)
 # on delete
-![react-multiple-file-upload-typescript](screenshots/cancel edit.png)
+!(screenshots/canceledit.png)
  
 
  
