@@ -55,6 +55,7 @@ const Main: React.FC = () => {
     try {
       const row = (await form.validateFields()) as Item;
       const newData = [...data];
+      
       const index = newData.findIndex((item) => key === item.id);
       if (index > -1) {
         const item = newData[index];
