@@ -1,4 +1,15 @@
 # Excel import using full stack typescript
+
+set up database for backend 
+```
+NODE_ENV=development
+DB_NAME=excel
+DB_USER=root
+DB_HOST=localhost
+DB_DRIVER=mysql
+DB_PASSWORD=""
+TEST_DB_NAME=cookbook_test
+```
 To compile your typescript use below command 
 
 ```
@@ -53,32 +64,4 @@ yarn start
 ![react-multiple-file-upload-typescript](screenshots/canceledit.png)
  
 
-### Set port
-.env
-```
-PORT=8081
-```
-
-## Project setup
-
-In the project directory, you can run:
-
-```
-npm install
-# or
-yarn install
-```
-
-or
-
-### Compiles and hot-reloads for development
-
-```
-npm start
-# or
-yarn start
-```
-
-Open [http://localhost:8081](http://localhost:8081) to view it in the browser.
-
-The page will reload if you make edits.
+ 
