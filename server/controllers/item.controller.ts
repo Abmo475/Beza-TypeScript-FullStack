@@ -30,7 +30,7 @@ export const deleteById = async(id: number): Promise<Boolean> => {
     return isDeleted
 }
 export const getAll = async(): Promise<Item[]> => {
-    return (await service.getAll()).map(toItem)
+    return (await service.getAll()).map(toItem) 
 }
 export const batchAdd=async(payload:CreateItemDTO[]):Promise<Item[]>=>{
 let data=[];

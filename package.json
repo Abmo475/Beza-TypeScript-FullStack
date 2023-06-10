@@ -1,7 +1,7 @@
 {
-  "name": "cookbook",
+  "name": "beza",
   "version": "1.0.0",
-  "description": "A simple recipe app using typescript and sequelize",
+  "description": "TypeScript excel import backend",
   "main": "dist/server/index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -17,8 +17,8 @@
     "speed",
     "microdiff"
   ],
-  "author": "ibywaks",
-  "license": "ISC",
+  "author": "Abdilkadir MOhammed",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "csvtojson": "^2.0.10",
