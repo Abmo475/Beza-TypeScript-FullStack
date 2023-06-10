@@ -54,6 +54,11 @@ npm start
 # or
 yarn start
 ```
+change port for both backend and frontned from respective .env file 
+```
+PORT=xxxx
+```
+
 # Main ui with record 
 ![react-multiple-file-upload-typescript](screenshots/thewhole.png)
 # MySQL database record 

@@ -3,7 +3,7 @@ import routes from './routes/items'
 import dbInit from './db/init'
 const cors=require('cors');
 dbInit()
-const port = 4000
+const port = process.env.PORT;
 export const get = () => {
     const app: Application = express()
     // Body parsing Middleware
