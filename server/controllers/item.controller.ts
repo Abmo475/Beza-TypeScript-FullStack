@@ -34,7 +34,7 @@ export const getAll = async(): Promise<Item[]> => {
 }
 export const batchAdd=async(payload:CreateItemDTO[]):Promise<Item[]>=>{
 let data=[];
-    data.push(await create(payload[0]));
+    data.push(await create(payload[0])); 
 return data;  
 }
  

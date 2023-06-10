@@ -23,6 +23,7 @@ const FilesUpload: React.FC = () => {
       setProgressInfos(_progressInfos);
     })
       .then(() => {
+        document.location="";
         setMessage((prevMessage) => [
           ...prevMessage,
           file.name + ": Successful!"
@@ -31,17 +32,16 @@ const FilesUpload: React.FC = () => {
       .catch((err: any) => {
         _progressInfos[idx].percentage = 0;
         setProgressInfos(_progressInfos);
-
         let msg = file.name + ": Failed!";
         if (err.response && err.response.data && err.response.data.message) {
           msg += " " + err.response.data.message;
         }
-
         setMessage((prevMessage) => [
           ...prevMessage,
           msg
         ]);
       });
+   
   };
   const uploadFiles = () => {
     if (selectedFiles != null) {
@@ -92,7 +92,7 @@ const FilesUpload: React.FC = () => {
             disabled={!selectedFiles}
             onClick={uploadFiles}
           >
-            Upload
+            Import Excel
           </button>
         </div>
       </div>

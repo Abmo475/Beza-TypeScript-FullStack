@@ -4,29 +4,9 @@ import {  Form, Input, InputNumber, Popconfirm, Table, Typography } from 'antd';
 import { CloseCircleOutlined, DeleteOutlined, EditOutlined, SaveOutlined } from '@ant-design/icons';
 import DataServices from '../services/Data.services';
 import FilesUpload from './FilesUpload';
-interface Item {
-  id: string;
-  item_no: string;
-  description: number;
-  unit: string; 
-  qty:number,
-  amount:number,
-  rate:number,
-createdAt:Date,
-updatedAt:Date
-
-}
+import {Item,EditableCellProps} from '../Interfaces/Interfaces'
 const originData: Item[] = [];
  
-interface EditableCellProps extends React.HTMLAttributes<HTMLElement> {
-  editing: boolean;
-  dataIndex: string;
-  title: any;
-  inputType: 'number' | 'text';
-  record: Item;
-  index: number;
-  children: React.ReactNode;
-}
 const EditableCell: React.FC<EditableCellProps> = ({
   editing,
   dataIndex,
