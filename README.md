@@ -43,7 +43,7 @@ npm start
 # or
 yarn start
 ```
-![react-multiple-file-upload-typescript](react-multiple-file-upload-typescript.png)
+![react-multiple-file-upload-typescript](thewhole.png)
 
 For instruction, please visit:
 > [React Typescript Multiple File Upload example](https://www.bezkoder.com/react-multiple-file-upload-typescript/)

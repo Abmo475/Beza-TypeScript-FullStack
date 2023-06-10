@@ -5,6 +5,7 @@ import { CloseCircleOutlined, DeleteOutlined, EditOutlined, SaveOutlined } from 
 import DataServices from '../services/Data.services';
 import FilesUpload from './FilesUpload';
 import {Item,EditableCellProps} from '../Interfaces/Interfaces'
+import Swal from 'sweetalert2'
 const originData: Item[] = [];
  
 const EditableCell: React.FC<EditableCellProps> = ({
@@ -45,6 +46,7 @@ const Main: React.FC = () => {
   const [editingKey, setEditingKey] = useState('');
   const isEditing = (record: Item) => record.id === editingKey;
   const edit = (record: Partial<Item> & { id: React.Key }) => {
+    console.log(record)
     form.setFieldsValue({ item_no: '', description: '', unit: '', ...record });
     setEditingKey(record.id);
   };
@@ -55,6 +57,7 @@ const Main: React.FC = () => {
     try {
       const row = (await form.validateFields()) as Item;
       const newData = [...data];
+
       const currentrow={
         id:key,
         item_no:row.item_no,
@@ -85,9 +88,20 @@ const Main: React.FC = () => {
     }
   };
   const remove=(id:String)=>{
-    DataServices.delete(id);
-    DataServices.getAll();
-    document.location=""
+    Swal.fire({
+      title: 'Do you want to delete record?',
+      showCancelButton: true,
+      confirmButtonText: 'Delete',
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        DataServices.delete(id);
+        DataServices.getAll();
+        document.location=""
+        Swal.fire('Record deleted', '', 'success')
+      } 
+    })
+   
   }
   const columns = [
     {
