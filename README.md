@@ -66,7 +66,7 @@ PORT=xxxx
 # On edit
 ![react-multiple-file-upload-typescript](screenshots/onedit.png)
 # on delete
-![react-multiple-file-upload-typescript](screenshots/canceledit.png)
+![react-multiple-file-upload-typescript](screenshots/cancel edit.png)
  
 
  
