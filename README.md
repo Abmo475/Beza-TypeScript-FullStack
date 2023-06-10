@@ -1,5 +1,27 @@
 # Excel import using full stack typescript
 
+In the project directory run 
+
+```
+npm install
+# or
+yarn install
+```
+This will install libraries  for server side 
+
+To move to client side use command 
+
+```
+cd client 
+```
+
+after moving to client use command 
+
+```
+npm install
+# or
+yarn install
+```
 
 ![react-multiple-file-upload-typescript](react-multiple-file-upload-typescript.png)
 
