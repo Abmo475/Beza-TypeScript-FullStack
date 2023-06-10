@@ -9,6 +9,13 @@ yarn install
 ```
 This will install libraries  for server side 
 
+Then use below command start your sever 
+```
+npm start
+# or
+yarn start
+```
+
 To move to client side use command 
 
 ```
@@ -22,7 +29,12 @@ npm install
 # or
 yarn install
 ```
-
+Then use below command to serve you app to browse
+```
+npm start
+# or
+yarn start
+```
 ![react-multiple-file-upload-typescript](react-multiple-file-upload-typescript.png)
 
 For instruction, please visit:
