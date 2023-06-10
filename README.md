@@ -43,9 +43,13 @@ npm start
 # or
 yarn start
 ```
+# Main ui with record 
 ![react-multiple-file-upload-typescript](thewhole.png)
+# MySQL database record 
 ![react-multiple-file-upload-typescript](db.png)
+# On edit
 ![react-multiple-file-upload-typescript](onedit.png)
+# on delete
 ![react-multiple-file-upload-typescript](canceledit.png)
  
 
