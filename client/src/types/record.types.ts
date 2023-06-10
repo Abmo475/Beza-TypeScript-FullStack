@@ -5,5 +5,4 @@ export default interface RecordData {
     item_no: any;
     description: any;
     id: any;
-    file:File
   }

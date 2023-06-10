@@ -55,7 +55,17 @@ const Main: React.FC = () => {
     try {
       const row = (await form.validateFields()) as Item;
       const newData = [...data];
-      
+      const currentrow={
+        id:key,
+        item_no:row.item_no,
+        description:row.description,
+        unit:row.unit,
+        rate:row.rate,
+        amount:row.amount,
+        qty:row.qty
+      }
+      console.log(currentrow)
+      DataServices.update(currentrow)
       const index = newData.findIndex((item) => key === item.id);
       if (index > -1) {
         const item = newData[index];

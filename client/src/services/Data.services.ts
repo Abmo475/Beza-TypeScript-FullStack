@@ -15,8 +15,8 @@ class DataService {
   }
 
 
-  update(data: RecordData, id: any) {
-    return http.put<any>(`/tutorials/${id}`, data);
+  update(data: RecordData) {
+    return http.put<any>(`api/v1/update/${data.id}`, data);
   }
 
   delete(id: any) {
