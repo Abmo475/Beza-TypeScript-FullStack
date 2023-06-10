@@ -44,13 +44,13 @@ npm start
 yarn start
 ```
 # Main ui with record 
-![react-multiple-file-upload-typescript](thewhole.png)
+![react-multiple-file-upload-typescript](screenshots/thewhole.png)
 # MySQL database record 
-![react-multiple-file-upload-typescript](db.png)
+![react-multiple-file-upload-typescript](screenshots/db.png)
 # On edit
-![react-multiple-file-upload-typescript](onedit.png)
+![react-multiple-file-upload-typescript](screenshots/onedit.png)
 # on delete
-![react-multiple-file-upload-typescript](canceledit.png)
+![react-multiple-file-upload-typescript](screenshots/canceledit.png)
  
 
 ### Set port
