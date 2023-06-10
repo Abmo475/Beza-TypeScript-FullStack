@@ -1,6 +1,6 @@
 
-import * as ItemDal from '../dal/items'
-import {ItemsInput, ItemsOuput} from '../../models/item'
+import * as ItemDal from '../db/dal/items'
+import {ItemsInput, ItemsOuput} from '../models/item'
 
 //intermediary between  controller and DAL
 export const create = async (payload: ItemsInput): Promise<ItemsOuput> => {

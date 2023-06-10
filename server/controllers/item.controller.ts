@@ -1,6 +1,6 @@
-import * as service from '../db/services/ItemService'
+import * as service from '../services/ItemService'
 import {CreateItemDTO, UpdateItemsDTO} from '../api/dto/item.dto'
-import {Item} from '../interfaces/item.interface'
+import {Item} from '../models/item.interface'
 import {ItemsOuput} from '../models/item'
 
 export const toItem= (item: ItemsOuput): Item => {
