@@ -1,6 +1,5 @@
-# React Multiple File Upload example (using Typescript)
-React Multiple File Upload example with Typescript, Hooks, Progress Bars using Axios, Bootstrap, Multipart File, FormData.
-
+# Excel import using full stack typescript
+#
 ![react-multiple-file-upload-typescript](react-multiple-file-upload-typescript.png)
 
 For instruction, please visit:

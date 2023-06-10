@@ -2,7 +2,7 @@
   "name": "cookbook",
   "version": "1.0.0",
   "description": "A simple recipe app using typescript and sequelize",
-  "main": "dist/index.js",
+  "main": "dist/server/index.js",
   "scripts": {
     "test": "jest --coverage",
     "start": "nodemon src/index.ts",
